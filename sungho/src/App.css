@@ -90,6 +90,16 @@ div {
 
 /* nav 끝 */
 
+.postMenu {
+  padding: 20px;
+  background: #d0d5d9;
+}
+.postMenu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .postList {
   background: aliceblue;
   width: 50%;
@@ -102,7 +112,7 @@ div {
   margin-bottom: -20px;
 }
 
-.postList h4:nth-child(1) {
+.postList {
   margin-top: 50%;
 }
 

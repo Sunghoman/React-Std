@@ -26,9 +26,16 @@ function App() {
       </div>
 
       <div className="postList">
+        <div className='postMenu'>
+          <button onClick={ () => {
+            let copy = [...post];
+            copy.sort();
+            setPost(copy)
+          }}>정렬</button>
+        </div>
         <h4>{post[0]} 
           <div className='postLike'>
-            <span onClick={ () => { console.log("따뽕") } }>Like</span> {like} 
+            <span onClick={ () => {setLike( like + 1)} }>Like</span> {like} 
           </div>
         </h4>
         <p>2022년 9월 2일</p>
@@ -40,7 +47,7 @@ function App() {
         <p>2022년 9월 2일</p>
         <h4>{post[2]}
           <div className='postLike'>
-            <span>Like</span> {like} 
+            <span onClick={ () => {setLike( like + 1)} }>Like</span> {like} 
           </div>
         </h4>
         <p>2022년 9월 2일</p>
