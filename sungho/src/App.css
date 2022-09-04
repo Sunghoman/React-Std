@@ -101,7 +101,7 @@ div {
 }
 
 .postList {
-  background: aliceblue;
+  background: rgb(250, 250, 250);
   width: 50%;
   margin: auto;
 }
@@ -109,11 +109,6 @@ div {
 .postList h4{
   padding-left: 30px;
   padding-top: 20px;
-  margin-bottom: -20px;
-}
-
-.postList {
-  margin-top: 50%;
 }
 
 .postList p {
@@ -167,4 +162,28 @@ div {
 }
 .postLike:focus:before, .postLike:focus:after {
   background-color:#fff
+}
+
+.modal {
+  padding: 20px;
+  width: 45%;
+  margin: auto;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+
+
+.modal > .close {
+  float: right;
+  color: #FFF;
+  transition: color .3s;
+  font-size: 1.3em;
+  line-height: 1.5;
+  font-weight: 300;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
 }
