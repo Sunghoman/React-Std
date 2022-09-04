@@ -1,8 +1,9 @@
 import './App.css';
+import { useState } from 'react';
 
 function App() {
 
-  let post = "강남 우동 맛집";
+  let [post, setPost] = useState(["남자 코트 추천", "여자 코트 추천", "강남 우동 맛집"]);
 
   return (
     <div className="App">
@@ -22,11 +23,14 @@ function App() {
       </div>
 
       <div className="postList">
-        <h4>{post}</h4>
+        <h4>{post[0]}</h4>
         <p>2022년 9월 2일</p>
-        <h4>{post}</h4>
+        <h4>{post[1]}</h4>
+        <p>2022년 9월 2일</p>
+        <h4>{post[2]}</h4>
         <p>2022년 9월 2일</p>
       </div>
+      
       
 
     </div>
