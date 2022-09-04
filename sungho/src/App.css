@@ -90,9 +90,16 @@ div {
 
 /* nav 끝 */
 
+.postList {
+  background: aliceblue;
+  width: 50%;
+  margin: auto;
+}
+
 .postList h4{
   padding-left: 30px;
-  padding-bottom: -20px;
+  padding-top: 20px;
+  margin-bottom: -20px;
 }
 
 .postList h4:nth-child(1) {
@@ -102,4 +109,52 @@ div {
 .postList p {
   padding: 30px;
   border-bottom: 1px solid #333;
+}
+
+.postLike {
+  float: right;
+  margin-right: 1.5em;
+  border-radius:0.1em;
+  padding:0.3em 0.5em 0.3em 1.8em;
+  border:0px none;
+  color:#3B5998;
+  position:relative;
+  display:block;
+  transition:all 0.3s ease-in-out;
+  box-shadow:0 0.01em 0.01em rgba(0,0,0,0.3), 0 0.01em 0.01em rgba(0,0,0,0.1) inset;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.postLike:before, .postLike:after {
+  content:'';
+  position:absolute;
+  display:block;
+  background-color:#3B5998;
+  width:0.62em;
+  height:0.9em;
+  border-radius:0.5em 0.5em 0 0;
+  transition:background-color 0.3s ease-in-out
+}
+
+.postLike:before {
+  transform:rotate(-45deg);left:0.6em;top:0.4em;
+}
+.postLike:after {
+  transform:rotate(45deg);top:0.4em;left:0.81em;
+}
+.postLike:hover {
+  background-color:#3B5998;color:#d0d5d9
+}
+.postLike:hover:before, .postLike:hover:after {
+  background-color:#d0d5d9
+}
+.postLike:focus {
+  outline:none;color:#fff;background-color:#3B5998
+}
+.postLike:focus:before, .postLike:focus:after {
+  background-color:#fff
 }
