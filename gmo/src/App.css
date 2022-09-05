@@ -1,38 +1,156 @@
-.App {
+/* nav start */
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: rgba(0,0,0,0.8);
+  font-size: 18px;
+  z-index: 2;
+}
+
+.menu-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -5px;
+  padding: 0 22px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu li {
+  display: inline-block;
   text-align: center;
+  width: auto;
+  margin-right: 76px;
+}
+.menu li:last-child {
+  margin-right: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu li span {
+  display: inline-block;
+  color: #fff;
+  font-weight: 100;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu li span:hover {
+  color: #969696;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  color: #fff;
+}
+/* nav end */
+
+/* content start */
+.main-bg {
+  margin-top: 48px;
+  height: 300px;
+  background-image: url("./img/main.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_image {
+  height: 300px;
+  background-image: url("./img/image1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main h1 {
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+}
+.btn:hover {
+  background-color: rgba(255,255,255,0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.card_content {
+  padding: 1rem;
+  background: rgba(0,0,0,0.4);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
 }
+
+.card_text {
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.card_rate {
+  margin: 0px 0px 0px 0px;
+  color: yellow;
+  font-weight: 900;
+  font-size: 28px;
+  margin-bottom: 1.25rem;
+}
+/* content end */
